@@ -1,0 +1,23 @@
+h1.t1 {
+    color: orange;
+    font-style: italic;
+}
+
+.t2 {
+    color: rgb(42, 191, 109);
+    text-decoration: underline;
+}
+
+.col1{color: darkgray;}
+
+.col2{color: brown;}
+
+.stl1{font-style: italic;text-decoration: line-through;}
+
+.stl2{font-size: 2cm;}
+
+.thecol{color: lightskyblue;}
+#thecol1{color: aquamarine;}
+
+p{color: greenyellow; font-size: 140%;}
+

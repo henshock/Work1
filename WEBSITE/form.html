@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 500px;
+            border: 2px dashed rgb(39, 166, 188);
+            border-radius: 20px;
+            margin: 15px;
+        }
+
+        legend {
+            font-family: 微軟正黑體;
+            font-weight: 600;
+            /* text-align: center; */
+            margin-left: 50px;
+        }
+
+
+        .d {
+            width: 450px;
+            border-bottom: 3px dashed rgb(146, 177, 198);
+            margin: 20px;
+            padding-bottom: 20px;
+        }
+
+
+
+        .sub {
+            width: 450px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .t1 {
+            width: 100px;
+            float: left;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>個資1<em style="font-size: 20%;">(必填)</em></legend>
+            <div class="d">
+                <label for="" class="t1">姓名:</label><input type="text" id="name" name="name" value="" size="5"
+                    autocomplete="off">
+            </div>
+            <div class="d">
+                <label for="password" class="t1">帳號:</label> <input type="account" id="account" name="account" autofocus
+                    placeholder="guest" autocomplete="on">
+            </div>
+            <div class="d">
+                <label for="password" class="t1">密碼:</label> <input type="password" id="password" name="pwd"
+                    maxlength="10" required>
+            </div>
+            <div class="d">
+                <label for="" class="t1">性別:</label>
+                <input type="radio" name="gender" value="male" id="m1"><label for="m1">男</label>
+                <!-- 上面或下面的方法皆可 -->
+                <label>
+                    <input type="radio" name="gender" value="female" id="">女</label>
+            </div>
+            <div class="d">
+                <lable for="" class="t1">生日:</lable>
+                <input type="date" name="birth" id="">
+            </div>
+            <div class="d">
+                <label for="" class="t1">E-mail:</label>
+                <input type="email" name="mail" id="" readonly>
+            </div>
+            <div class="d">
+                <label for="" class="t1">身分證:</label>
+                <input type="text" pattern="[a-z,A-Z]{1}[1-2,8-9]{1}\d{8}" name="idcode" id="" maxlength="10" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>地址</legend>
+            <div class="d">
+                <lable class="t1">縣市:</lable>
+                <select name="add" multiple size="2">
+                    <option value="TPE">台北市</option>
+                    <option value="TPH" selected>新北市</option>
+                    <option value="TYU">桃園市</option>
+                    <option value="HSC">新竹市</option>
+                </select>
+            </div>
+
+            <div class="d">
+                <lable for="" class="t1">戶籍地址:</lable>
+                <input type="text" name="add2" size="30" id="">
+            </div>
+            <div class="d">
+                <lable for="" class="t1">通訊地址:</lable>
+                <input type="text" name="add3" size="30" id="">
+            </div>
+            <div class="d">
+                <label for="" class="t1">檔案上傳:</label>
+                <input type="file" name="file1" id="" multiple>
+        </fieldset>
+
+        </div>
+        <fieldset>
+            <legend>個資2</legend>
+            </div>
+            <div class="d">
+                <label for="" class="t1">興趣:</label>
+                <label>
+                    <input type="checkbox" name="hobby" value="music" id="">音樂</label>
+                <label>
+                    <input type="checkbox" name="hobby" value="sport" id="">運動</label>
+                <label>
+                    <input type="checkbox" name="hobby" value="reading" id="">閱讀</label>
+                <label>
+                    <input type="checkbox" name="hobby" value="onlinegame" id="">線上遊戲</label>
+            </div>
+            <div class="d">
+                <label for="" class="t1">Blog:</label>
+                <input type="url" name="url" list="urls">
+                <datalist id="urls">
+                    <option value="http://www.pchome.com">PChome</option>
+                    <option value="http://www.google.com"></option>
+                    <option value="http://www.facebook.com">
+                    <option value="http://www.youtube.com">
+                </datalist> 
+            </div>
+            </div>
+            <div class="d">
+                <label for="conmment" class="t1">意見:</label> <textarea id="conmment" name="conmment" rows="10" cols="20"
+                    disabled></textarea>
+            </div>
+        </fieldset>
+        <div class="sub">
+            <input type="submit" value="送出">
+            <input type="reset" value="清除>">
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.list1{border: 0.05in dotted orange
+;border-radius: 10px 10px 10px 10px;
+}
+
+.list2{list-style-image: url("../image/46041633.jpg");}
+
+.in{list-style-position: inside;background-color: lightgreen;}
+
+.out{list-style-position: outside;background-color: lightgreen}

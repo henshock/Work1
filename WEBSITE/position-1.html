@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .static{
+        border: 3px solid rgb(10, 113, 24);
+        position: static;
+    }
+
+    .nrelative{
+        border: 3px solid rgb(22, 132, 175);
+        position: relative;
+    }
+
+    .relative{
+        border: 3px solid rgb(229, 88, 12);
+        position: relative;
+        width: 300px;
+        height: 150px;
+        top: 100px;
+        left: 200px;
+    }
+
+    .fixed{
+        border: 3px solid rgb(17, 52, 128);
+        width: 200px;
+        height: 200px;
+        position: fixed;
+        left: 600px;
+        bottom: 400px;
+    }
+
+    .parent{
+        border: 3px solid darkorchid;
+        width: 500px;
+        height: 500px;
+        /* position: static; */
+        position: relative;
+
+    }
+
+    .absolute{
+        border: 3px solid black;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+
+    }
+</style>
+</head>
+<body>
+    <div class="static">static</div>
+    <div class="nrelative">nrelative</div>
+    <div class="relative">relative</div>
+    <div class="fixed">fixed</div>
+    <div class="parent">parent
+        <div class="absolute">absolute</div>
+    </div>
+    
+
+    
+    
+</body>
+</html>
